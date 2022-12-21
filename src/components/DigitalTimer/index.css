@@ -1,0 +1,138 @@
+* {
+  margin: 0px;
+}
+body {
+  background-color: black;
+}
+.container {
+  width: 60%;
+  height: 100vh;
+  background-image: linear-gradient(to right, white, #defafe, #defafe, #cffcf1);
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: roboto;
+}
+.heading {
+  color: #0f172a;
+  text-align: center;
+}
+.clock-container {
+  display: flex;
+}
+.timer-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.timer-operations {
+  width: 40%;
+}
+.timer {
+  background-color: white;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.clock {
+  color: #00d9f5;
+  font-size: 32px;
+  font-weight: bold;
+}
+.clock-status {
+  font-weight: bold;
+  font-size: 18px;
+  color: #0f172a;
+}
+.timer-operations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+}
+.start-btn {
+  margin-right: 15px;
+}
+.button {
+  background-color: transparent;
+  border-width: 0px;
+  font-size: 23px;
+  font-family: roboto;
+  color: #1e293b;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.play-rest-img {
+  height: 24px;
+  margin-right: 10px;
+}
+.description {
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.minute-modifier {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.minutes {
+  color: #0f172a;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 8px 22px;
+  background-image: linear-gradient(to right, #34eba8, #00d9f5);
+  border-width: 0px;
+  border-radius: 5px;
+  margin: 0px 10px;
+}
+.decrease-btn,
+.increase-btn {
+  font-weight: bold;
+  font-size: 25px;
+  background-color: transparent;
+  border-width: 0px;
+}
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    background-image: linear-gradient(white, #defafe, #defafe, #cffcf1);
+    width: 98%;
+  }
+  .timer {
+    width: 100px;
+    height: 100px;
+    font-size: 28px;
+  }
+  .timer-container,
+  .timer-operations {
+    width: 90%;
+  }
+  .clock-container {
+    margin-top: -25px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
